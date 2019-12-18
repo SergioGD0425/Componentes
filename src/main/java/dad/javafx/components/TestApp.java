@@ -9,16 +9,17 @@ public class TestApp extends Application{
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-
+/*
 		ListSelector<String> listSelector = new ListSelector<String>();
 		listSelector.setLeftTitle("Jugadores");
 		listSelector.setRightTitle("Participantes");
 		
 		listSelector.getLeftItems().addAll("Perico","MENGANO","FULANITO","PAlotes");
-		
+*/		
+		DateChooser date = new DateChooser();
 		
 		BorderPane root = new BorderPane();
-		root.setCenter(listSelector);
+		root.setCenter(date);
 		
 		Scene scene = new Scene(root,320,200);
 		
